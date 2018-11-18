@@ -4,9 +4,10 @@
 
 [返回](/)
 
-```js{4}
-var a= 1;
-var b= 2;
-var c = 3;
-console.log(a+b+c);
-```
+[前端乱炖](/front/)
+
+[后端打滚](/back/)
+
+[工具方法](/tools/)
+
+[其他一切](/other/)

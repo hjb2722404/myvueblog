@@ -18,13 +18,23 @@ module.exports = {
         nav: [
           { text: '主页', link: '/' },
           { 
-            text: '文章', 
+            text: '技术迷思', 
             items : [
-              {text: '技术迷思', link: '/tech/'},
-              {text: '生活哲思', link: '/life/'}
+              {text: '前端乱炖', link: '/tech/front/'},
+              {text: '后端打滚', link: '/tech/back/'},
+              {text: '工具方法', link: '/tech/tools/'},
+              {text: '其他一切', link: '/tech/other/'},
             ]  
           },
-          {text :'关于我', link:'http//:www.baidu.com'}
+          { 
+            text: '生活哲思', 
+            items : [
+              {text: '影评系列', link: '/life/movie/'},
+              {text: '杂文随想', link: '/life/arch/'},
+              {text: '诗歌骈文', link: '/life/poem/'},
+            ]  
+          },
+          {text :'关于我', link:'/about/'}
         ],
         sidebar: 'auto',
         lastUpdated: 'Last Updated',
