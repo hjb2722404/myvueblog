@@ -61,7 +61,7 @@ module.exports = (function(){
          * @param response
          */
         processRequest:function(request,response){
-
+            var _that =this;
             handler(request,response,function(err){
                 var hasExt = true;
                 var requestUrl = request.url;
@@ -87,7 +87,7 @@ module.exports = (function(){
                 //获取资源文件的相对路径
                 var filePath = path.join("blog/",pathName);
                 //获取对应文件的文档类型
-                var contentType = this.getContentType(filePath);
+                var contentType = _that.getContentType(filePath);
                 //如果文件名存在
                 fs.exists(filePath,function(exists){
                     if(exists){
